@@ -22,6 +22,11 @@
     <instantiate from="root/src/app_package/BasePresenter.kt.ftl"
         to="${escapeXmlAttribute(srcOut)}/common/base/BasePresenter.kt" />
 
+    <#if isSubActivity>
+        <instantiate from="root/src/app_package/SubActivity.kt.ftl"
+            to="${escapeXmlAttribute(srcOut)}/common/base/SubActivity.kt" />
+    </#if>
+
     <merge from="root/AndroidManifest.xml.ftl"
         to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml"/>
 </recipe>

@@ -2,6 +2,12 @@
     <category value="Other" />
     <formfactor value="Mobile" />
 
+    <parameter
+        id="isSubActivity"
+        name="Add SubActivity"
+        type="boolean"
+        default="true" />
+
     <parameter name="Package name" constraints="package" id="packageName" type="string" />
 
     <globals file="globals.xml.ftl" />

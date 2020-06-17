@@ -2,5 +2,8 @@
 
     <application
          android:name=".common.MyApp">
+         <#if isSubActivity>
+            <activity android:name=".common.base.SubActivity"/>
+         </#if>
     </application>
 </manifest>
